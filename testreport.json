@@ -1,0 +1,502 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I going add a new user to acess Aura Push",
+    "line": 1,
+    "id": "i-going-add-a-new-user-to-acess-aura-push",
+    "tags": [],
+    "uri": "features\\addUser.feature",
+    "elements": [
+      {
+        "id": "i-going-add-a-new-user-to-acess-aura-push;add-a-new-admin-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add a new Admin User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I will navigate to Aura Push page \"https://aurapushui-dev.telefonicabigdata.com/login\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I will login with a \"admin@telefonica.com\" user and \"@admin\" pass",
+            "match": {
+              "location": "stepDefinations\\steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Navigate to User page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1308000000,
+              "error_message": "WebDriverError: element click intercepted: Element <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/usuarios\">...</a> is not clickable at point (119, 662). Other element would receive the click: <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/doc-mailing\">...</a>\n  (Session info: chrome=89.0.4389.90)\n  (Driver info: chromedriver=88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}),platform=Windows NT 10.0.19041 x86_64)\n    at Object.checkLegacyResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:31:33\n    at Generator.next (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:4:12)\n    at World.<anonymous> (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:30:41)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click in Add User",
+            "match": {
+              "location": "stepDefinations\\steps.ts:37"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill all fields correctly, select Admin profile and click in Save",
+            "match": {
+              "location": "stepDefinations\\steps.ts:41"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "A new Admin user must be added.",
+            "match": {
+              "location": "stepDefinations\\steps.ts:54"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "I going edit a user to acess Aura Push",
+    "line": 1,
+    "id": "i-going-edit-a-user-to-acess-aura-push",
+    "tags": [],
+    "uri": "features\\editUser.feature",
+    "elements": [
+      {
+        "id": "i-going-edit-a-user-to-acess-aura-push;edit-a-user-change-his-name",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Edit a User change his name",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I will navigate to Aura Push page \"https://aurapushui-dev.telefonicabigdata.com/login\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I will login with a \"admin@telefonica.com\" user and \"@admin\" pass",
+            "match": {
+              "location": "stepDefinations\\steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Navigate to User page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1079000000,
+              "error_message": "WebDriverError: element click intercepted: Element <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/usuarios\">...</a> is not clickable at point (119, 662). Other element would receive the click: <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/doc-mailing\">...</a>\n  (Session info: chrome=89.0.4389.90)\n  (Driver info: chromedriver=88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}),platform=Windows NT 10.0.19041 x86_64)\n    at Object.checkLegacyResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:31:33\n    at Generator.next (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:4:12)\n    at World.<anonymous> (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:30:41)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Search by \"usuario teste\" user",
+            "match": {
+              "location": "stepDefinations\\stepsEditUser.ts:12"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click in Edit User",
+            "match": {
+              "location": "stepDefinations\\stepsEditUser.ts:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I change name field  to \"teste editado xx\" and click in Save",
+            "match": {
+              "location": "stepDefinations\\stepsEditUser.ts:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "The user must have name edited to \"teste editado xx\".",
+            "match": {
+              "location": "stepDefinations\\stepsEditUser.ts:37"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "I going delete a user from Aura Push",
+    "line": 1,
+    "id": "i-going-delete-a-user-from-aura-push",
+    "tags": [],
+    "uri": "features\\deleteUser.feature",
+    "elements": [
+      {
+        "id": "i-going-delete-a-user-from-aura-push;delete-a-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Delete a User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I will navigate to Aura Push page \"https://aurapushui-dev.telefonicabigdata.com/login\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I will login with a \"admin@telefonica.com\" user and \"@admin\" pass",
+            "match": {
+              "location": "stepDefinations\\steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Navigate to User page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1145000000,
+              "error_message": "WebDriverError: element click intercepted: Element <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/usuarios\">...</a> is not clickable at point (119, 662). Other element would receive the click: <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/doc-mailing\">...</a>\n  (Session info: chrome=89.0.4389.90)\n  (Driver info: chromedriver=88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}),platform=Windows NT 10.0.19041 x86_64)\n    at Object.checkLegacyResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:31:33\n    at Generator.next (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:4:12)\n    at World.<anonymous> (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:30:41)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Search by \"teste editado\" user",
+            "match": {
+              "location": "stepDefinations\\stepsEditUser.ts:12"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click in delete User",
+            "match": {
+              "location": "stepDefinations\\stepsDeleteUser.ts:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The user must be deleted.",
+            "match": {
+              "location": "stepDefinations\\stepsDeleteUser.ts:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "I going list users from Aura Push",
+    "line": 1,
+    "id": "i-going-list-users-from-aura-push",
+    "tags": [],
+    "uri": "features\\listUsers.feature",
+    "elements": [
+      {
+        "id": "i-going-list-users-from-aura-push;list-users-from-aura-push",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "List users from Aura push",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I will navigate to Aura Push page \"https://aurapushui-dev.telefonicabigdata.com/login\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I will login with a \"admin@telefonica.com\" user and \"@admin\" pass",
+            "match": {
+              "location": "stepDefinations\\steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3951000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Navigate to User page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1077000000,
+              "error_message": "WebDriverError: element click intercepted: Element <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/usuarios\">...</a> is not clickable at point (119, 662). Other element would receive the click: <a class=\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button\" tabindex=\"0\" role=\"button\" aria-disabled=\"false\" href=\"/doc-mailing\">...</a>\n  (Session info: chrome=89.0.4389.90)\n  (Driver info: chromedriver=88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}),platform=Windows NT 10.0.19041 x86_64)\n    at Object.checkLegacyResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:31:33\n    at Generator.next (<anonymous>)\n    at C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\JSFiles\\stepDefinations\\steps.js:4:12)\n    at World.<anonymous> (C:\\Aura Vivo\\Automação Aura\\aura-push-bdd\\stepDefinations\\steps.ts:30:41)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The a list with users must be shown.",
+            "match": {
+              "location": "stepDefinations\\stepsListUsers.ts:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

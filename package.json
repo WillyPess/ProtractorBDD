@@ -1,0 +1,34 @@
+{
+  "name": "aura-push-bdd",
+  "version": "1.0.0",
+  "description": "Aura-Push test automation using BDD approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor JSFiles/configuration.js",
+    "pretest": "tsc",
+    "cucumbertest": "protractor JSFiles/cucumber-config.js",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdrive-update": "./node_modules/.bin/webdriver-manager update"
+  },
+  "author": "Melquisedec Lima",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^3.6.3",
+    "@types/jasminewd2": "2.0.8",
+    "@types/node": "12.12.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.3.0",
+    "jasmine": "^3.6.4",
+    "jasmine-spec-reporter": "^6.0.0",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "ts-node": "9.0.0",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "protractor-helpers": "^1.1.812"
+  }
+}
