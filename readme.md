@@ -121,18 +121,3 @@ Created by **Willy Pessoa**
 🔗 [GitHub](https://github.com/willypess)
 🔗 [Portfolio](https://willypess.github.io)
 🔗 [LinkedIn](https://www.linkedin.com/in/seu-perfil-aqui)
-
----
-
-> 💼 This project is part of my professional portfolio. For more real-world automation examples, check out my GitHub or portfolio page.
-
-```
-
----
-
-Se quiser, posso também:
-- Adicionar imagens ou GIFs de execução dos testes
-- Criar um `index.html` simples de CRUD fake para você usar como interface de teste
-
-Deseja isso também?
-```
